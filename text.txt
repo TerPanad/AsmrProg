@@ -1,0 +1,17 @@
+// คำสั่ง SQL ที่ใช้ SUM เพื่อรวมค่าทศนิยม
+$sql = "SELECT SUM(amount) AS total_amount FROM transactions";
+
+// รันคำสั่ง SQL
+$result = $conn->query($sql);
+
+// ตรวจสอบว่ามีผลลัพธ์หรือไม่
+if ($result->num_rows > 0) {
+    // ดึงผลลัพธ์ออกมา
+    $row = $result->fetch_assoc();
+    echo "Total Amount: " . $row["total_amount"];
+} else {
+    echo "No results found.";
+}
+
+// ปิดการเชื่อมต่อ
+$conn->close();

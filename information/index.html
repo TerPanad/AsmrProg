@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Switcher</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="button-container">
+        <button onclick="showForm('form1')">Show Form 1</button>
+        <button onclick="showForm('form2')">Show Form 2</button>
+
+    </div>
+
+    <div class="form-container">
+        <form id="form1" class="form" style="display: none;">
+            <h2>Form 1</h2>
+            <label for="name1">Name:</label>
+            <input type="text" id="name1" name="name1">
+            <button type="submit">Submit</button>
+        </form>
+
+        <form id="form2" class="form" style="display: none;">
+            <h2>Form 2</h2>
+            <label for="name2">Name:</label>
+
+
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

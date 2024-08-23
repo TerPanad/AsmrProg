@@ -1,0 +1,218 @@
+* {
+    font-size: 1rem;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+.navbar {
+    padding: 5px;
+    width: auto;
+}
+
+.navbar .imalogo {
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.navbar .tradelogo {
+    font-size: 2rem;
+    font-family: serif;
+}
+
+.navbar .navbar-text .login {
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 2rem;
+    font-family: serif;
+    cursor: pointer;
+    background-color: #31c2fc;
+    /* สีพื้นฐาน */
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* เพิ่มการเปลี่ยนแปลง */
+}
+
+.navbar .navbar-text .signup {
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 2rem;
+    font-family: serif;
+    cursor: pointer;
+    background-color: #31c2fc;
+    /* สีพื้นฐาน */
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* เพิ่มการเปลี่ยนแปลง */
+}
+
+.navbar .navbar-text .login:hover {
+    background-color: #45a049;
+    /* สีเมื่อชี้ */
+    transform: scale(1.05);
+    /* ขยายขนาดเล็กน้อย */
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    margin: 1rem;
+}
+
+main {
+    flex: 9;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin-right: 0rem;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #af4220, #402ee0);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+aside {
+    flex: 10;
+    padding: 1rem;
+    background-color: #e4e4e4;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #af4220, #402ee0);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.navbar .navbar-text .signup:hover {
+    background-color: #45a049;
+    /* สีเมื่อชี้ */
+    transform: scale(1.05);
+    /* ขยายขนาดเล็กน้อย */
+    cursor: pointer;
+}
+
+.textux {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #af4220, #402ee0);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    padding: 50px;
+    margin: 50px;
+}
+
+.containergrid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    justify-content: center;
+    text-align: center;
+}
+
+.containergrid img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.containergrid .item-a {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0%;
+}
+
+.containergrid .item-a h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+footer {
+    padding: 5px;
+    margin-top: 50px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(45deg, #ffdcd1, #81f094);
+    color: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+    --danger: #D32F2F;
+    --light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    z-index: 500;
+    padding-bottom: 20px;
+    box-sizing: content-box;
+}
+
+.navbar .logo .logo-name span {
+    color: var(--dark);
+}
+
+.navbar .logo .bx {
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+}
